@@ -17,7 +17,6 @@
 #include <linux/atomic.h>
 #include <asm/page.h>
 #include <asm/pgtable.h>
-#include "internal.h"
 
 #define BUFSIZE 100
 
