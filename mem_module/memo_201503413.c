@@ -46,12 +46,12 @@ static struct file_operations myops =
 
 int init_module(void) //executed when module is loaded into the kernel
 {
- printk(KERN_INFO “CARNET: 201503413 \n”);
+ printk(KERN_INFO "CARNET: 201503413 \n");
  ent = proc_create("memo_201503413",0660,NULL,&myops);
  return 0;
 }
 void cleanup_module(void) //executed as the kernel module is removed from the kernel
 {
   proc_remove(ent);
- printk(KERN_INFO “CURSO: Sistemas Operativos 1 \n”);
+ printk(KERN_INFO "CURSO: Sistemas Operativos 1 \n");
 }
